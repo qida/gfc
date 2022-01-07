@@ -13,3 +13,6 @@
 
 # Dependency directories (remove the comment below to include it)
 # vendor/
+/img/YaHei.Consolas.1.11b.ttf
+/img/YaHeiBold.ttf
+/ding2/.company_access_token_file
