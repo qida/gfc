@@ -7,7 +7,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/qida/go/logs"
+	"github.com/qida/gfc/logs"
 	"github.com/qiniu/api.v7/auth/qbox"
 	"github.com/qiniu/api.v7/cdn"
 	"github.com/qiniu/api.v7/storage"
