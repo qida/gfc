@@ -6,8 +6,8 @@ import (
 	"math/rand"
 	"time"
 
-	"github.com/qiniu/api.v7/auth"
-	"github.com/qiniu/api.v7/sms"
+	"github.com/qiniu/api.v7/v7/auth"
+	"github.com/qiniu/api.v7/v7/sms"
 )
 
 type QiniuSMS struct {

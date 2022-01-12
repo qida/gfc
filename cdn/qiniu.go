@@ -8,9 +8,9 @@ import (
 	"time"
 
 	"github.com/qida/gfc/logs"
-	"github.com/qiniu/api.v7/auth/qbox"
-	"github.com/qiniu/api.v7/cdn"
-	"github.com/qiniu/api.v7/storage"
+	"github.com/qiniu/api.v7/v7/auth/qbox"
+	"github.com/qiniu/api.v7/v7/cdn"
+	"github.com/qiniu/api.v7/v7/storage"
 	"golang.org/x/net/context"
 )
 
