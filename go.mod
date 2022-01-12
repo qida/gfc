@@ -1,4 +1,4 @@
-module gfc
+module github.com/qida/gfc
 
 go 1.17
 
@@ -13,7 +13,6 @@ require (
 	github.com/icepy/go-dingtalk v0.0.0-20180430151047-e8997a391814
 	github.com/mholt/archiver v3.1.1+incompatible
 	github.com/nfnt/resize v0.0.0-20180221191011-83c6a9932646
-	github.com/qida/gfc v0.0.1
 	github.com/qiniu/api.v7/v7 v7.8.2
 	github.com/tal-tech/go-zero v1.2.5
 	github.com/xxtea/xxtea-go v0.0.0-20170828040851-35c4b17eecf6
