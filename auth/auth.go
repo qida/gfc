@@ -1,12 +1,3 @@
-/*
- * @Author: qida
- * @Date: 2022-01-07 13:49:59
- * @LastEditTime: 2022-01-07 14:15:00
- * @LastEditors: qida
- * @Description:
- * @FilePath: \zxjy_api_crme:\gopath\lib\src\github.com\qida\gfc\auth\auth.go
- * good day
- */
 package auth
 
 import (
@@ -34,10 +25,11 @@ func NewAuth(key string) *Auth {
 }
 
 //加密
-func (a *Auth) Encrypt(uid int, userAuth *Auth) string {
-	userAuth.salt = rand.Intn(1000)
-	userAuth.tm = time.Now()
-	src, _ := json.Marshal(userAuth)
+func (a *Auth) Encrypt(uid int, s interface{}) string {
+	a.salt = rand.Intn(1000)
+	a.tm = time.Now()
+	a.User = s
+	src, _ := json.Marshal(a)
 	encodeString := base64.URLEncoding.EncodeToString(a.Xxtea.Encrypt(false, src))
 	return fmt.Sprintf("%d%s%s", uid, f分隔符, encodeString)
 }
