@@ -97,6 +97,16 @@ func MD5V(str string) string {
 	return hex.EncodeToString(h.Sum(nil))
 }
 
+func MD5Str(str string) string {
+	return MD5Byte([]byte(str))
+}
+
+func MD5Byte(byts []byte) string {
+	h := md5.New()
+	h.Write(byts)
+	return hex.EncodeToString(h.Sum(nil))
+}
+
 func PKCS7Padding(ciphertext []byte, blockSize int) []byte {
 	padding := blockSize - len(ciphertext)%blockSize
 	padtext := bytes.Repeat([]byte{byte(padding)}, padding)
